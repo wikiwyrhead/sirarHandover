@@ -1,0 +1,42 @@
+/* 
+ * Partnerships Logo Slider Animation CSS
+ * Dependencies : Modefied partnersTabsSlider.php
+ * */
+
+/* Hide Next/Prev Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+/* Logo Sizing */
+.partnersTabsSlider__slideThumbsLogo {
+  width: 55%;
+  height: auto;
+}
+
+/* Slider slide */
+.partnersTabsSlider__slide {
+  flex: calc(100% / 4) 0 0; // Adjust  value depending on the  design
+}
+
+/* Slider wrapper */
+.partnersTabsSlider__sliderWrapper {
+  display: flex;
+  animation: infiniteSlide 25s linear infinite;
+}
+
+/* Reverse the second line slider */
+.myThumbsSwiper2 .partnersTabsSlider__sliderWrapper {
+  animation: infiniteSlide 25s linear infinite reverse;
+}
+
+/* Keyframe animation */
+@keyframes infiniteSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

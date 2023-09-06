@@ -1,0 +1,47 @@
+/*
+ *
+ * SERVICES | PRODUCTS | INTEGRATION PAGES  Animation CSS
+ * Dependency : producAnimatedSlide.js
+ * */
+
+/* Hide the first section off-screen initially */
+
+div.sections section:not(:first-child) {
+  transition: ease-in;
+  /*opacity: 0%*/
+}
+
+/* Show the elements on-screen and animate them when the class "appear" is applied */
+.appear.fromLeft {
+  opacity: 1;
+  transform: translateX(0);
+  animation: fromLeft 1.2s;
+}
+
+.appear.fromRight {
+  opacity: 1;
+  transform: translateX(0);
+  animation: fromRight 1.2s;
+}
+
+@keyframes fromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

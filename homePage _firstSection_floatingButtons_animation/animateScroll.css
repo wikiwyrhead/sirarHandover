@@ -1,0 +1,72 @@
+/* 
+ * 
+ * HOME PAGE Animation CSS
+ * Dependency : animateScroll.js
+ * */
+
+/* First Section */
+.home .textImage__contentTitle.animated,
+.home .textImage.section.animated,
+.leaderCard__name.animated,
+.leaderCard__text.animated,
+.leaderCard__position.animated {
+  position: relative;
+  opacity: 0;
+}
+.home .textImage__contentTitle.animated,
+.home .textImage.section.animated,
+.leaderCard__name.animated,
+.leaderCard__text.animated,
+.leaderCard__position.animated {
+  top: 40px;
+  animation: slideUp ease 0.4s forwards;
+}
+
+.home .slideUp {
+  top: 40px;
+  left: 10px;
+  animation: slideUp ease 0.5s forwards 1.2s;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 1;
+  }
+}
+
+/* Animation Floating Icons */
+
+.contact__slogan--border.animated {
+  animation: pop 1s linear 1;
+}
+
+.contact__slogan--pink.animated {
+  animation: pop 0.8s linear 1;
+}
+
+.contact__slogan--violet.animated {
+  animation: pop 0.5s linear 1;
+}
+
+@keyframes pulse {
+  25% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+@keyframes push {
+  50% {
+    transform: scale(0.8);
+  }
+}
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
+}
