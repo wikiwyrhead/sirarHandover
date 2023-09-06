@@ -1,0 +1,20 @@
+/*
+ *
+ * ABOUT PAGE Animation CSS
+ * Dependency : aboutUSanimate.js
+ * */
+
+.leadership__swiper .swiper-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.leadership__slide {
+  flex-shrink: 0;
+  width: 28%;
+  margin-right: 20px;
+}
+
+/* REMOVE LEADERSHIP NAV ARROW */
+.leadership__nav {
+  display: none;
+}
