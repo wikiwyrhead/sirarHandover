@@ -1,5 +1,5 @@
 # sirarHandover
-Temporary reposiroty for sirar handover
+Temporary Repository for sirar handover
 
 **Pending Handover Report
 Task Status and Progress**
